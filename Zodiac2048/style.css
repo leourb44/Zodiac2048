@@ -18,19 +18,13 @@ header{
     width: 100vw;
     box-shadow: 0px 5px 15px #000000c5;
 }
-footer{
-    background-color: #00000058;
-    width: 100vw;
-    position: static;
-	bottom: 0;
-    line-height: 2.6vh;
-}
 
 img.img-zodiaco{
     width: 100vw;
     object-fit: fill;
     margin-top: -15%;
     opacity: 0.5;
+    text-align: center;
 }
 
 #container.zodiaco{
@@ -44,7 +38,7 @@ h1, h2, h3,p{
    font-family: Roman SD;
 }
 h1{
-    font-size: 10vw;
+    font-size: 7vw;
     margin-top: 10%;
 }
 h2, p{
@@ -71,10 +65,6 @@ h3{
     text-align: center;
     padding-top: 10px;
 }
-img.img-zodiaco{
-    width: 100vw;
-    object-fit: cover;
-}
 #btn-dowload{
     width: 50vw;
     margin: 20px auto auto auto;
@@ -92,7 +82,7 @@ div.container-apps{
     margin-top: 20px;
     text-align: center;
 }
-img.app, #container-apps a{
+img.app{
     width: 40px;
     margin: auto;
     text-align: center;
@@ -106,15 +96,119 @@ img.redes{
     margin: 20px 10px 0 10px;
 }
 
+div.container-redes{
+    width: auto;
+    margin: auto;
+    text-align: center;
+}
+
+footer{
+    background-color: #00000058;
+    width: 100vw;
+    max-width: 100%;
+    position: static;
+	bottom: 0;
+    line-height: 2.6vh;
+    padding:  8vw;
+    align-items: center;
+}
+
 .txt-rodape, .copy{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
-    margin: 10px;
+}
+#container-txt-rodape{
+    text-align: center;
+    margin: auto;
+    width: 55vw;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
 }
 .txt-rodape{
     display: inline-flex;
-    text-align: center;
 }
 .copy{
     color: #9c9c9c;
+}
+
+@media (min-width: 540px) {
+
+    h1{
+        font-size: 6vw;
+        margin-top: 3%;
+    }
+    h2, p{
+        font-size: 4vw;
+    }
+    h3{
+        font-size: 2.5vw;
+    }
+    .container-frase{
+        width: 85vw;
+    }
+    img.img-zodiaco{
+        width: 85vw;
+        text-align: center;
+        margin: auto;
+        margin-top: -10%;
+        display: flex;
+    }
+    div#container.zodiaco{
+       text-align: center;
+       margin: auto;
+       display: flex;
+    }
+    .container-frase{
+        margin-top: 2%;
+    }
+    #btn-dowload{
+        margin-top: -1%;
+    }
+    img.redes{
+        width: 35px;   
+    }
+    div.container-redes{
+        width: auto;
+        margin: auto;
+        text-align: center;
+    }
+    .txt-rodape, .copy{
+        font-size: 3vw;
+        margin: 1vw;
+    }
+    .copy{
+        color: #9c9c9c;
+    }
+}
+@media (min-width: 700px) {
+    #logoZodiac{
+        height: 80px;
+    }
+    img.app{
+        width: 10vw;
+        margin: auto;
+        text-align: center;
+        margin: 10px;
+    }
+    .container-frase{
+        padding: 2vw;
+    }
+    #btn-dowload{
+        padding: 3vw;
+    }
+    img.redes{
+        width: 50px;   
+        margin-bottom: 1vw;
+    }
+    h1{
+        font-size: 5vw;
+        margin-top: 3%;
+    }
+    h2, p{
+        font-size: 3.5vw;
+    }
+    h3{
+        font-size: 2.2vw;
+    }
 }
