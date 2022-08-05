@@ -8,7 +8,7 @@ html, body {
 }
 #body{
     width: 100vw;
-    background: #8400ff url("src/imagens/Artboard.svg") no-repeat ;
+    background: #ffffff url("src/imagens/Artboard.svg") no-repeat ;
     background-size: cover;
 }
 
@@ -210,5 +210,76 @@ footer{
     }
     h3{
         font-size: 2.2vw;
+    }
+}
+@media (min-width: 1100px){
+    header{
+        height: 6vw;
+        box-shadow: 0px 50px 150px #000000c5;
+    }
+    #logoZodiac{
+        height: 6vw;
+    }
+    h1, h2, h3{
+        text-align: left;
+        font-family: Roman SD;
+        }
+    h1{
+        font-size: 4vw;
+        margin-top: 3%;
+        width: 20vw;
+        margin-left: 3%;
+    }
+    h2, p{
+        font-size: 2.2vw;
+    }
+    h2, h3{
+        margin-left: 3%;
+    }
+    h3{
+        font-size: 1.5vw;
+    }
+    .container-frase{
+        background-color: #7923c48f;
+        width: 45vw;
+        margin: 2% 2%;
+        padding: 70px;
+    }
+    img.img-zodiaco{
+        width: 60vw;
+        margin-top: -30%;
+        position: relative;
+    }
+    div#container.zodiaco{
+        position: absolute;
+    }
+    #btn-dowload{
+        width: 15vw;
+        margin: -28% 0px 0px 2%;
+        padding: 50px;
+        border-radius: 50px;
+    }
+    img.app{
+        width: 3.5vw;
+        margin: 1% 0 3% 2%;
+        text-align: left;
+        position: sticky;
+    }
+    div.container-apps{
+        margin: 2% 0 0 2%;
+        text-align: left;
+    }
+    footer{
+        padding:  2vw;
+        max-width: 100%;
+    }
+    img.redes{
+        width: 3vw;
+    }
+    .txt-rodape, .copy{
+        font-size: 1.5vw;
+    }
+    #container-txt-rodape{
+        width: 30vw;
     }
 }
